@@ -10,7 +10,7 @@ Longhao Li, Zhao Guo, Hongjie Chen, Yuhang Dai, Ziyu Zhang, Hongfei Xue, Tianlun
 This is the official repository 👑 for the WenetSpeech-Yue dataset and the source code for WenetSpeech-Pipe speech data preprocessing pipeline.
 
 WenetSpeech-Pipe Overview:
-<div align="center"><img width="800px" src="https://github.com/llh666521/WenetSpeech-Yue/blob/main/figs/WenetSpeech-Pipe.svg" /></div>
+<div align="center"><img width="800px" src="https://github.com/ASLP-lab/WenetSpeech-Yue/blob/main/figs/wenetspeech_pipe.svg" /></div>
 
 ## Download
 * The WenetSpeech-Yue dataset is available at [WenetSpeech-Yue](https://huggingface.co/datasets/ASLP-lab/WenetSpeech-Yue).
@@ -97,7 +97,7 @@ WenetSpeech-Pipe Overview:
 * Contains 21,800 hours of large-scale Cantonese speech corpus with rich annotations, the largest open-source resource for Cantonese speech research.
 * Stores metadata in a single JSON file, including audio path, duration, text confidence, speaker identity, SNR, DNSMOS, age, gender, and character-level timestamps. Additional metadata tags may be added in the future.
 * Covers ten domains: Storytelling, Entertainment, Drama, Culture, Vlog, Commentary, Education, Podcast, News, and Others.
-<div align="center"><img width="800px" src="https://github.com/llh666521/WenetSpeech-Yue/blob/main/figs/data_distribution.png" /></div>
+<div align="center"><img width="800px" src="https://github.com/ASLP-lab/WenetSpeech-Yue/blob/main/figs/data_distribution.png" /></div>
 
 ## Benchmark
 To address the unique linguistic characteristics of Cantonese, we propose WSYue-eval, a comprehensive benchmark encompassing both Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) tasks.
@@ -180,14 +180,14 @@ Despite text postprocessing, ASR outputs still vary in lexical choice, segmentat
 
 To further enhance transcription accuracy, we leverage [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B) for minimal, context-aware refinements of the consensus output. The LLM references all original ASR hypotheses and applies only essential corrections—such as grammar, lexical choice, or named entities—while preserving the integrity of the spoken content.
 
-<div align="center"><img width="500px" src="https://github.com/llh666521/WenetSpeech-Yue/blob/main/figs/LLM_Corrector.svg" /></div>
+<div align="center"><img width="500px" src="https://github.com/ASLP-lab/WenetSpeech-Yue/blob/main/figs/llm_corrector.svg" /></div>
 
 ## Contributors
 
-| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/colleges/nwpu.png" width="250px"> | <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/aishelltech.png" width="250px"> | <img src="https://raw.githubusercontent.com/llh666521/WenetSpeech-Yue/main/figs/teleai.png" width="250px"> |
+| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/colleges/nwpu.png" width="250px"> | <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/aishelltech.png" width="250px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/teleai.png" width="250px"> |
 | ---- | ---- | ---- |
 
-| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/chumenwenwen.png" width="250px"> | <img src="https://raw.githubusercontent.com/llh666521/WenetSpeech-Yue/main/figs/hkust.jpg" width="250px"> |
+| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/chumenwenwen.png" width="250px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/hkust.jpg" width="250px"> |
 | :---: | :---: |
 
 
