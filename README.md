@@ -4,11 +4,13 @@ Longhao Li, Zhao Guo, Hongjie Chen, Yuhang Dai, Ziyu Zhang, Hongfei Xue, Tianlun
 <p align="center">
 📑 <a href="https://www.arxiv.org/abs/2508.09600">Paper</a> &nbsp&nbsp | &nbsp&nbsp 
 🐙 <a href="https://github.com/ASLP-lab/WenetSpeech-Yue">GitHub</a> &nbsp&nbsp | &nbsp&nbsp 
-🤗 <a href="https://huggingface.co/collections/ASLP-lab/wenetspeech-yue-68b690d287cde88389e5dba1">HuggingFace</a> &nbsp&nbsp | &nbsp&nbsp 
+🤗 <a href="https://huggingface.co/collections/ASLP-lab/wenetspeech-yue-68b690d287cde88389e5dba1">HuggingFace</a>
+<br><br>
 🖥️ <a href="https://huggingface.co/spaces/ASLP-lab/WenetSpeech-Yue">HuggingFace Space</a> &nbsp&nbsp | &nbsp&nbsp 
 🎤 <a href="https://llh666521.github.io/WenetSpeech-Yue/">Demo Page</a> &nbsp&nbsp | &nbsp&nbsp 
 💬 <a href="https://github.com/llh666521/WenetSpeech-Yue?tab=readme-ov-file#contact">Contact Us</a>
 </p>
+
 
 This is the official repository 👑 for the WenetSpeech-Yue dataset and the source code for WenetSpeech-Pipe speech data preprocessing pipeline.
 
