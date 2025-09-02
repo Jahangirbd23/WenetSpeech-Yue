@@ -46,7 +46,7 @@ WenetSpeech-Pipe Overview:
 
   <tr><td align="left" colspan="11"><b>w/o LLM</b></td></tr>
   <tr>
-    <td align="left"><b>Conformer-Yue⭐</b></td><td align="center">130</td><td align="center"><b>16.57</b></td><td align="center">7.82</td><td align="center">7.72</td><td align="center">11.42</td><td align="center">5.73</td><td align="center">5.73</td><td align="center">8.97</td><td align="center"><ins>5.05</ins></td><td align="center">8.89</td>
+    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/u2pp_conformer_yue"><b>Conformer-Yue</b></a>⭐</td><td align="center">130</td><td align="center"><b>16.57</b></td><td align="center">7.82</td><td align="center">7.72</td><td align="center">11.42</td><td align="center">5.73</td><td align="center">5.73</td><td align="center">8.97</td><td align="center"><ins>5.05</ins></td><td align="center">8.89</td>
   </tr>
   <tr>
     <td align="left">Paraformer</td><td align="center">220</td><td align="center">83.22</td><td align="center">51.97</td><td align="center">70.16</td><td align="center">68.49</td><td align="center">47.67</td><td align="center">79.31</td><td align="center">69.32</td><td align="center">73.64</td><td align="center">89.00</td>
@@ -54,7 +54,7 @@ WenetSpeech-Pipe Overview:
   <tr>
     <td align="left">SenseVoice-small</td><td align="center">234</td><td align="center">21.08</td><td align="center"><ins>6.52</ins></td><td align="center">8.05</td><td align="center"><b>7.34</b></td><td align="center">6.34</td><td align="center">5.74</td><td align="center"><ins>6.65</ins></td><td align="center">6.69</td><td align="center">9.95</td>
   <tr>
-    <td align="left"><b>SenseVoice-s-Yue⭐</b></td><td align="center">234</td><td align="center">19.19</td><td align="center">6.71</td><td align="center">6.87</td><td align="center">8.68</td><td align="center"><ins>5.43</ins></td><td align="center">5.24</td><td align="center">6.93</td><td align="center">5.23</td><td align="center">8.63</td>
+    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/sensevoice_small_yue"><b>SenseVoice-s-Yue</b></a>⭐</td><td align="center">234</td><td align="center">19.19</td><td align="center">6.71</td><td align="center">6.87</td><td align="center">8.68</td><td align="center"><ins>5.43</ins></td><td align="center">5.24</td><td align="center">6.93</td><td align="center">5.23</td><td align="center">8.63</td>
   </tr>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ WenetSpeech-Pipe Overview:
     <td align="left">Whisper-medium</td><td align="center">769</td><td align="center">75.50</td><td align="center">68.69</td><td align="center">59.44</td><td align="center">62.50</td><td align="center">62.31</td><td align="center">64.41</td><td align="center">80.41</td><td align="center">80.82</td><td align="center">50.96</td>
   </tr>
   <tr>
-    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/whisper_medium_yue"><b>Whisper-m-Yue⭐</b></a></td><td align="center">769</td><td align="center">18.69</td><td align="center">6.86</td><td align="center"><ins>6.86</ins></td><td align="center">11.03</td><td align="center">5.49</td><td align="center"><ins>4.70</ins></td><td align="center">8.51</td><td align="center"><ins>5.05</ins></td><td align="center"><ins>8.05</ins></td>
+    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/whisper_medium_yue"><b>Whisper-m-Yue</b></a>⭐</td><td align="center">769</td><td align="center">18.69</td><td align="center">6.86</td><td align="center"><ins>6.86</ins></td><td align="center">11.03</td><td align="center">5.49</td><td align="center"><ins>4.70</ins></td><td align="center">8.51</td><td align="center"><ins>5.05</ins></td><td align="center"><ins>8.05</ins></td>
   </tr>
 
   <tr>
