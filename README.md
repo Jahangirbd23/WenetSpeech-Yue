@@ -189,11 +189,8 @@ To further enhance transcription accuracy, we leverage [Qwen3-4B](https://huggin
 
 ## Contributors
 
-| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/colleges/nwpu.png" width="250px"> | <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/aishelltech.png" width="250px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/teleai.png" width="250px"> |
-| ---- | ---- | ---- |
-
-| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/chumenwenwen.png" width="250px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/hkust.jpg" width="250px"> |
-| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/colleges/nwpu.png" width="250px"> | <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/aishelltech.png" width="250px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/teleai.png" width="250px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/hkust.jpg" width="250px"> |
+| ---- | ---- | ---- | ---- |
 
 
 ## Citation
