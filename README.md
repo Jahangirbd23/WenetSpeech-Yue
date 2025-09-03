@@ -161,6 +161,25 @@ python wenet/bin/recognize.py \
   --result_dir $test_result_dir \
   --decoding_chunk_size -1
 ```
+### SenseVoice_Small_Yue
+```
+from funasr import AutoModel
+from funasr.utils.postprocess_utils import rich_transcription_postprocess
+
+model_dir = "sensevoice_small_yue"
+
+model = AutoModel(
+        model=model_path,
+        device="cuda:0",
+    )
+res = model.generate(
+    wav_path,
+    cache={},
+    language="yue",
+    use_itn=True,
+    batch_size=64,
+)
+```
 
 ## WenetSpeech-Pipe
 ### Audio Collection
